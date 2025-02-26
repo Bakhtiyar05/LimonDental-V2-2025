@@ -862,20 +862,20 @@ nav .navbar .links li .arrow {
 
 /* _____________ */
 
-@media ( min-width: 1300px ) {
+@media screen and ( min-width: 1300px ) {
 
 	.owl-carousel {
 		margin-top: 140px;
-		height: 1300px;
+		min-height: 1300px !important;
 	}
 	
 	.owl-carousel .item img {
-		height: 1300px;
+		min-height: 1300px !important;
 		object-fit: cover;
 	}
 	
 	.owl-carousel .item  {
-		height: 1300px;
+		min-height: 1300px !important;
 	}
 
 	img.image_1.aos-init.aos-animate {
