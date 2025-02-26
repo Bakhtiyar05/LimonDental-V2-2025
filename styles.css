@@ -553,7 +553,7 @@ nav .navbar .links li .arrow {
 
 .container {
 	max-width: 90%;
-	margin: 40px auto 0 auto;
+	margin: 0px auto 0 auto;
 }
 
 .wp_icon {
@@ -1114,7 +1114,6 @@ nav .navbar .links li .arrow {
 
 	.back_img {
 		display: flex;
-		padding-top: 20px;
 		flex-direction: column;
 	}
 
