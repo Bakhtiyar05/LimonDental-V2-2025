@@ -444,6 +444,7 @@ nav .navbar .links li .arrow {
 
 	.navbar .bx-menu {
 		display: block;
+		width: 35px;
 	}
 
 	nav .navbar .nav-links {
