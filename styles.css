@@ -364,7 +364,7 @@ nav .navbar .links li .arrow {
 
 	nav .navbar .logo a {
 		font-size: 23px;
-		margin-right: 70px;
+		margin-right: 90px;
 	}
 
 	nav .navbar .links li {
@@ -916,6 +916,15 @@ nav .navbar .links li .arrow {
 
 	.navbar .search-box i {
 		line-height: 51px;
+	}
+
+	.owl-carousel .item img {
+		height: 250px;
+		object-fit: cover;
+	}
+
+	.about_us_box img {
+		width: 300px !important;
 	}
 
 	.goog-te-gadget {
