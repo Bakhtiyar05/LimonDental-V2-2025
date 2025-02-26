@@ -1532,11 +1532,11 @@ nav .navbar .links li .arrow {
 	}
 
     .about_us_text h1 {
-        font: 900 1.6em var(--Font1);
+        font: 700 1.6em var(--Font1);
     }
     
     .about_us_text h4 {
-        font: 900 1em var(--Font1);
+        font: 700 1em var(--Font1);
     }
     
     /* .about_us_box .image_1 {
