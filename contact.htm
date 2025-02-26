@@ -4,14 +4,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="./images/favicon.png" type="image/png" />
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./images/favIconlimondentalsvg.svg" type="image/png" />
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.css" />
 
   <link href='https://unpkg.com/boxicons@2.0.8/css/boxicons.min.css' rel='stylesheet'>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="./styles.css" />
   <title>LimonDental</title>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -23,23 +29,15 @@
     <style>
 
 
-        @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+        /* @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap'); */
 
         .container_contact {
-            margin: auto;
+            margin: 200px auto 0 auto;
             width: 95%;
         }
 
         main {
-          font-family: "PT Sans", Arial, Helvetica, sans-serif;
-        }
-
-        section .page_title {
-            height: 300px;
-            background-image: url('./images/dental_contact2.jpg');
-            background-position: right;
-            background-repeat: no-repeat;
-            background-size: cover;
+          font-family: var(--Font1) !important;
         }
 
         section .page_title h1 {
@@ -98,15 +96,24 @@
         .address {
             display: flex;
             justify-content: space-around;
+
+            a:hover {
+              color: var(--yellow);
+            }
         }
         
         .address i {
-            border: 2px solid gray;
+            border: 1px solid var(--primary);
             border-radius: 50%;
             padding: 20px;
-            color: gray;
+            color: var(--primary);
             font-size: 2em;
             margin-right: 20px;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .address_info {
@@ -136,7 +143,7 @@
         .mobile_info span small {
             display: flex;
             flex-direction: column;
-            font-family: "PT Sans", Arial, Helvetica, sans-serif;
+            font-family: var(--Font1);
             line-height: 30px;
             color: gray;
             font-size: 1em;
@@ -222,9 +229,18 @@
   <nav class="nav">
     <div class="info_area">
       <small>Poçt indeksi - AZ1078</small>
-      <small><i class="fas fa-map-marker-alt"></i> <span>Səməd Vurğun küç. 230 F</span></small>
       <small>
-        <i class="fas fa-phone-alt"></i> <span>+99412 480 06 78</span></small>
+        <i class="fas fa-map-marker-alt"></i> 
+        <a target='_blank' href="https://www.google.com/maps/place/Limon+Dental/@40.3999455,49.8322647,15z/data=!4m6!3m5!1s0x40307d7d5aa5c717:0xe984c3eb61fc9cf2!8m2!3d40.3999455!4d49.8322647!16s%2Fg%2F11b7q50sxl?entry=ttu">
+          <small> Səməd Vurğun küç. 230 F</small>
+        </a>
+      </small>
+      <small>
+        <i class="fas fa-phone-alt"></i>
+        <span>
+          <a href="tel:+994124800678">+99412 480 06 78</a>
+        </span>
+      </small>
       <ul class="social">
         <li class="facebook"><a target="blank" href="https://www.facebook.com/limondentalltd/">
           <i class="fab fa-facebook"></i></a></li>
@@ -240,7 +256,6 @@
       <div class="logo"><a href="index.html"><img src="./images/logolimondental.png" alt=""></a></div>
       <div class="nav-links">
         <div class="sidebar-logo">
-          <!-- <span class="logo-name"><a href="index.html"><span class="limon_text">Limon</span> <span class="dental_text">Dental</span></a></span> -->
       <div class="logo logo_sidebar"><a href="index.html"><img src="./images/logolimondental.png" alt=""></a></div>
 
           <i class='bx bx-x'></i>
@@ -254,7 +269,8 @@
             <i class="far fa-clock"></i>
             <small>Bazar ertəsi - Şənbə<br><span>09:00 - 19:00</span></small>
             <i class="fas fa-map-marker-alt"></i>
-            <small><span>Səməd Vurğun küç. 230 F</span></small>
+            <small>
+              <a target='_blank' href="https://www.google.com/maps/place/Limon+Dental/@40.3999455,49.8322647,15z/data=!4m6!3m5!1s0x40307d7d5aa5c717:0xe984c3eb61fc9cf2!8m2!3d40.3999455!4d49.8322647!16s%2Fg%2F11b7q50sxl?entry=ttu"><small>Səməd Vurğun küç. 230 F</small></a></small>
             <i class="fas fa-phone-alt"></i>
             <small>
                 <p>+99412 480 06 78</p>
@@ -280,10 +296,7 @@
     </div>
   </nav>
   <main>
-        <section>
-            <div class="page_title">
-            </div>
-        </section>
+        
         <div class="container_contact">
             <div class="ttile_section">
                 <img src="./images/logolimondental.png" alt="">
@@ -298,7 +311,7 @@
                     </div>
                     <div class="address_info">
                         <h2>Ünvan</h2><br>
-                        <small>Vurğun küç. 230 F</small>
+                        <small><a target='_blank' href="https://www.google.com/maps/place/Limon+Dental/@40.3999455,49.8322647,15z/data=!4m6!3m5!1s0x40307d7d5aa5c717:0xe984c3eb61fc9cf2!8m2!3d40.3999455!4d49.8322647!16s%2Fg%2F11b7q50sxl?entry=ttu"><small> Səməd Vurğun küç. 230 F</small></a></small>
                     </div>
                 </div>
                 <div class="mobile">
@@ -309,10 +322,10 @@
                         <div class="mobile_info">
                             <span>
                                 <h2>Telefon</h2><br>
-                                <small>+99412 480 06 78</small>
-                                <small>+99412 449 39 18</small>
-                                <small>+99455 630 77 91</small>
-                                <small>+99470 630 77 91</small>
+                                <small><p><a href="tel:+994124800678">+99412 480 06 78</a></p></small>
+                                <small><p><a href="tel:+994124493918">+99412 449 39 18</a></p></small>
+                                <small><p><a href="tel:+994556307791">+99455 630 77 91</a></p></small>
+                                <small><p><a href="tel:+994706307791">+99470 630 77 91</a></p></small>
                             </span>
                         </div>
                     </div>
