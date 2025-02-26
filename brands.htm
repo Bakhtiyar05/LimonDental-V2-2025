@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>LimonDental</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.css" />
+    <!-- -->
+
+    <link href='https://unpkg.com/boxicons@2.0.8/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <!--  -->
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    
+    </head>
+
+    <style>
+
+
+
+
+
+        main {
+            padding: 70px 0;
+            min-height: 100vh;
+            background-image: url('./images/brand_page_bckg_map1.png');
+            background-position: center;
+            background-size: contain;
+        }
+
+        .banner_brands {
+            background-image: url('https://thompsondental.co.nz/wp-content/uploads/2021/03/dentistry-tools-techniques.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            height: 400px;
+            margin-top: 140px;
+        }
+
+        .banner_shadow {
+            height: 400px;
+            background-color: rgba(0, 0, 0, 0.419);
+        }
+
+        .brands_container {
+            display: grid;
+            justify-content: center;
+            gap: 20px;
+        }
+
+
+        .title_banner {
+            display: flex;
+            align-items: center;
+            margin: auto;
+            height: 400px;
+            width: 90%;
+        }
+
+        /* .title_banner div p {
+            letter-spacing: 1px;
+            font: 200 1em var(--Font1);
+            width: 50%;
+        } */
+
+        .title_banner h1 {
+            font: bold 40px var(--Font1);
+            color: #fff;
+            text-transform: capitalize;
+            letter-spacing: 4px;
+        }
+
+        .page {
+            max-width: 700px;
+            border-radius: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px 1px rgb(183, 181, 181);
+            padding: 10px;
+            text-align: center;
+        }
+
+        .page:hover {
+            box-shadow: 0 0 10px 1px rgb(148, 148, 148);
+        }
+
+        .page p {
+            font: 200 1em var(--Font1);
+            color: rgb(0, 0, 0);
+            letter-spacing: 0.5px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .page__main {
+            padding: 10px;
+            width: 100%;
+        }
+
+        .page img {
+            width: 100%;
+            height: 100px;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+
+        .page__pretitle {
+            display: block;
+            margin: 0 0 15px;
+        }
+
+        .page__pretitle-link {
+            padding: 10px 20px;
+            border: medium none;
+            border-radius: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #ffffff;
+            font: 800 0.8em var(--Font1);
+            text-decoration: none;
+            background-color: var(--primary);
+            transition: color 0.4s ease;
+        }
+
+        .page__pretitle-link:hover {
+            background-color: var(--yellow);
+        }
+
+        .read-more__link {
+            letter-spacing: 1.5px;
+            font: 200 .9em var(--Font1);
+            background-color: var(--primary);
+            padding: 5px 15px;
+            border-radius: 30px;
+            color: #fff;
+        }
+
+        .read-more__link:hover {
+            background-color: var(--yellow);
+        }
+
+        .read-more.is-inline,
+        .read-more.is-inline p,
+        .read-more.is-inline + span {
+            display: inline;
+        }
+
+        .read-more.is-inline + span {
+            margin-left: 0.25em;
+        }
+
+        .brands_names {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #fff;
+            min-width: 100%;
+            position: fixed;
+            bottom: 0;
+            padding: 10px 2px;
+            margin-right: 10px;
+            justify-content: space-between;
+            z-index: 9;
+        }
+
+        .brands_names a {
+            margin: 5px 0;
+            border: 1px solid var(--primary);
+            padding: 3px 3px 3px 3px;
+            border-radius: 30px;
+            font: 600 .7em var(--Font1);
+            letter-spacing: 1px;
+        }
+
+        .brands_names a:hover {
+          background-color: var(--primary);
+          color: #fff;
+        }
+
+        .flex_column {
+            max-width: 80%;
+            display: flex;
+            margin: auto;
+            justify-content: space-between;
+        }
+
+        .wp_icon {
+          bottom: 100px;
+        }
+
+        #footer {
+          padding-bottom: 50px;
+        }
+
+        @media (max-width: 1127px) {
+
+          .brands_names {
+            display: flex;
+            flex-wrap: wrap;
+          }
+
+          .brands_names a {
+            font: bold .6em var(--Font1) !important;
+            margin: 2px 0 !important;
+          }
+        }
+
+        @media (max-width: 768px) {
+
+            .flex_column {
+              max-width: 95% !important;
+            }
+        }
+
+        @media (max-width: 509px) {
+
+            .banner_brands {
+                height: 300px;
+            }
+
+            .banner_shadow {
+                height: 300px;
+            }
+
+            .brands_container {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .title_banner {
+                height: 300px;
+            }
+
+            .title_banner div h1 {
+              font-size: 30px;
+              letter-spacing: 0 !important;
+            }
+
+            .title_banner div p {
+              width: 90%;
+            }
+
+            .flex_column {
+              display: flex;
+              flex-direction: column;
+            }
+
+            .page {
+              width: 90% !important;
+              margin: auto !important;
+            }
+
+            .page img {
+              width: 100% !important;
+              height: 55px !important;
+              object-fit: contain !important;
+            }
+
+            .brand_box {
+                position: relative;
+                width: 150px;
+                margin: auto;
+                box-shadow: 0 0 7px rgb(185, 185, 185);
+                border-radius: 20px;
+                padding: 5px;
+            }
+
+            .brand_box img {
+                width: 100%;
+                padding: 20px;
+            }
+
+            .brand_box:hover img {
+                transform: scale(1.2);
+                transition: .8s ease;
+            }
+        }
+
+
+
+        
+
+    </style>
+
+<body>
+
+  <div class="preloader">
+    <div class="loader_animation">
+      <img class="preloader-icon" src="./images/preloader.gif" alt="Preloader">
+      <h3 class="fontfamilyUbuntu">Loading
+        <span>.</span>
+        <span>.</span>
+        <span>.</span>
+      </h3>
+    </div>
+    <div class="social">
+      <ul>
+        <li><i class="fab fa-facebook"></i></li>
+        <li><i class="fab fa-instagram"></i></li>
+        <li><i class="fab fa-twitter"></i></li>
+        <li><i class="fab fa-whatsapp"></i></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="wp_icon">
+    <a href="https://api.whatsapp.com/send?phone=+994556307791&text=Salam&source=&data=" class="whatsapp_float"
+      target="blank"><i class="fab fa-whatsapp"></i></a>
+  </div>
+  <nav class="nav">
+    <div class="info_area">
+      <small>Poçt indeksi - AZ1078</small>
+      <small><i class="fas fa-map-marker-alt"></i> <span>Səməd Vurğun küç. 230 F</span></small>
+      <small>
+        <i class="fas fa-phone-alt"></i> <span>+99412 480 06 78</span></small>
+      <ul class="social">
+        <li class="facebook"><a target="blank" href="https://www.facebook.com/limondentalltd/">
+          <i class="fab fa-facebook"></i></a></li>
+        <li class="instagram"><a target="blank" href="https://www.instagram.com/limon_dental_technical/">
+          <i class="fab fa-instagram"></i></a></li>
+        <li class="twitter"><a href="https://www.youtube.com/channel/UCp941euzwjx0O_LZy9GhcFA"><i class="fab fa-youtube"></i></a></li>
+        <li class="whatsapp"><a href="https://api.whatsapp.com/send?phone=+994556307791&text=Salam&source=&data="
+            class="whatsapp_float" target="blank"><i class="fab fa-whatsapp"></i></a>
+      </ul>
+    </div>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo"><a href="index.html"><img src="./images/logolimondental.png" alt=""></a></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+      <div class="logo logo_sidebar"><a href="index.html"><img src="./images/logolimondental.png" alt=""></a></div>
+
+          <i class='bx bx-x'></i>
+        </div>
+        <ul class="links">
+          <li class="link_nav"><a href="index.html">Ana səhifə</a></li>
+          <li class="link_nav"><a href="brands.htm">Tərəfdaşlar</a></li>
+          <li class="link_nav"><a href="about.html">Haqqımızda</a></li>
+          <li class="link_nav"><a href="contact.htm">Əlaqə</a></li>
+          <div class="info_area_mobile">
+            <i class="far fa-clock"></i>
+            <small>Bazar ertəsi - Şənbə<br><span>09:00 - 19:00</span></small>
+            <i class="fas fa-map-marker-alt"></i>
+            <small><span>Səməd Vurğun küç. 230 F</span></small>
+            <i class="fas fa-phone-alt"></i>
+            <small>
+                <p>+99412 480 06 78</p>
+                <p>+99412 449 39 18</p>
+                <p>+99455 630 77 91</p>
+                <p>+99470 630 77 91</p>
+            </small>
+            <ul class="social_mobile_seidebar">
+              <li class="facebook"><a target="blank" href="https://www.facebook.com/limondentalltd/"><i
+                    class="fab fa-facebook"></i></a></li>
+              <li class="instagram"><a target="blank" href="https://www.instagram.com/limon_dental_technical/"><i
+                    class="fab fa-instagram"></i></a></li>
+              <li class="youtube"><a href=""><i class="fab fa-youtube"></i></a></li>
+              <li class="whatsapp"><a href="https://api.whatsapp.com/send?phone=+994708617342&text=Salam&source=&data="
+                  class="whatsapp_float" target="blank"><i class="fab fa-whatsapp"></i></a>
+            </ul>
+          </div>
+        </ul>
+      </div>
+        <section class="googleTranslate_searchBox">
+          <!-- <div id="google_translate_element"></div> -->
+      </section>
+    </div>
+  </nav>
+
+        <div class="banner_brands">
+            <div class="banner_shadow">
+                <div class="title_banner">
+                    <div>
+                        <h1>Dünya brendləri</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <main>
+
+      <div class="brands_names" id="fixed">
+        <a href="#kuraray" class="anime">Kuraray</a>
+        <a href="#FMG" class="anime">FMG</a>
+        <a href="#SDI" class="anime">SDI</a>
+        <a href="#Eighteeth" class="anime">Eighteeth</a>
+        <a href="#Fanta" class="anime">Fanta Dental</a>
+        <a href="#DFS" class="anime">DFS</a>
+        <a href="#Harz" class="anime">Harz Labs</a>
+        <a href="#Phrozen" class="anime">Phrozen</a>
+        <a href="#Zetintech" class="anime">Zetintech</a>
+        <a href="#Mihmvogt" class="anime">Mihm-vogt</a>
+        <a href="#Warantec" class="anime">Warantec</a>
+        <a href="#Beta" class="anime">Beta Dent</a>
+        <a href="#Teknik" class="anime">Teknik Dental</a>
+        <a href="#Maquire" class="anime">Maquire Dental Group</a>
+        <a href="#Wohlwend" class="anime">Wohlwend</a>
+        <a href="#Zubler" class="anime">Zubler</a>
+        <a href="#Foshan" class="anime">Foshan Anle Medical</a>
+        <a href="#Sanctuaryhealth" class="anime">Sanctuaryhealth</a>
+      </div>
+        
+          <br>
+        <section class="brands_container">
+            <article class="page" id="kuraray">
+              <a target="_blank" href="https://www.kuraray.com/">
+                <img src="./images/Kuraray.png" alt="">
+              </a>
+              <div class="page__pretitle">
+                <a class="page__pretitle-link" href="https://www.kuraray.com/" target="_blank">Sayta keç</a>
+              </div>
+            <section class="page__main">
+              <div class="readmore js-read-more" data-rm-words="10">
+                <p>Kuraray Noritake Dental 1 aprel 2012-ci il tarixində Kuraray Medical Inc. və Noritake Dental Supply co. şirkətlərinin inteqrasiyasından sonra fəaliyyətə başlamışdır. Kuraray Noritake Dental Inc. üzvi diş materialları (birləşdirici maddələr, plomblar və üzlük qatranı daxil olmaqla) və qeyri-üzvi stomatoloji materialların sahəsi (tac və gips üçün keramika daxil olmaqla) ilə məşğul olmaqla stomatoloji sahənin qabaqcıl şirkətlərindən biri halına gəlmişdir.</p> 
+              </div>
+            </section>
+          </article>
+
+          <article id="FMG" class="page"><a target="_blank" href="https://www.fgmdentalgroup.com/international/">
+                <img src="https://ifu.fgm.ind.br/build/images/logo.8c2a8ffe.png" alt="">
+              </a>
+            <section class="page__main">
+              <div class="page__pretitle">
+                <a class="page__pretitle-link" href="https://www.fgmdentalgroup.com/international/" target="_blank">Sayta keç</a>
+              </div>
+              <div class="readmore js-read-more" data-rm-words="10">
+                <p>FGM - Şirkətin tarixi 1996-cı ildə ilk əsl Braziliya diş ağardıcı gelinin, hazırda dünyada məşhur olan Whiteness Perfect-in inkişafı ilə başlamışdır. 100-dən çox ölkədə mövcud olan FGm bir neçə ölkədə 400-dən çox stomatoloji məhsulu ilə dünya lideridir.</p>
+              </div>
+            </section>
+          </article>
+
+          <article class="page" id="SDI">
+            <section class="page__main">
+              <a target="_blank" href="https://www.sdi.com.au/au/">
+                <img src="./images/SDI.png" alt="">
+              </a>
+              <div class="page__pretitle">
+                <a class="page__pretitle-link" href="https://www.sdi.com.au/au/" target="_blank">Sayta keç</a>
+              </div>
+              <div class="readmore js-read-more" data-rm-words="10">
+                <p>SDI Limited ilk növbədə qabaqcıl stomatoloji materialların tədqiqatı və inkişafı, istehsalı və marketinqi ilə məşğul olur. SDI-nin məhsulları dünyanın 100-dən çox ölkəsində distribyutorlar və pərakəndə satışçılar vasitəsilə satılır. 1972-ci ildə əsası qoyulan SDI sürətlə qabaqcıl stomatoloji materiallarda dünya liderləri siyahısında öz yerini alıb.</p>
+              </div>
+            </section>
+          </article>
+
+          <article class="page" id="Eighteeth">
+            <section class="page__main">
+              <a target="_blank" href="https://www.eighteeth.com/">
+                <img src="./images/Eighteeth.png" alt="">
+              </a>
+              <div class="page__pretitle">
+                <a class="page__pretitle-link" href="https://www.eighteeth.com/" target="_blank">Sayta keç</a>
+              </div>
+              <div class="readmore js-read-more" data-rm-words="10">
+                <p>
+                  2016-cı ildə qurulan Changzhou Sifary Medical Technology Co., Ltd. (marka adı Eighteeth) 6 ildir ki, stomatoloji məhsullar, istehsal, marketinq və xidmət inteqrasiyası inkişaf edir. Yalnız bir neçə il ərzində Eighteeth stomatoloji məhsulları bütün dünyada bir çox peşəkar stomatoloqlar tərəfindən tövsiyə olunur və 130-dan çox ölkəyə ixrac edilir.
+                  Hal-hazırda, Sifary Medical 14 məhsul kateqoriyasına malikdir, bunlara endo motor, apex lokator, endo aktivator, müalicə işığı, rentgen aparatı, intraoral sensor, intraoral skaner daxildir, 110 səlahiyyətli patentə malikdir.
+                </p>
+              </div>
+            </section>
+          </article>
+
+          <article class="page" id="Fanta">
+            <section class="page__main">
+              <a target="_blank" href="http://www.fanta-dental.com/">
+                <img src="./images/Fanta.png" alt="">
+              </a>
+              <div class="page__pretitle">
+                <a class="page__pretitle-link" href="http://www.fanta-dental.com/" target="_blank">Sayta keç</a>
+              </div>
+              <div class="readmore js-read-more" data-rm-words="10">
+                <p>
+                  2014-cü ildə bazara endodontiya sahəsi ilə giriş edən Fanta Dental 8 ildir ki, diş həkimləri üçün təqdim olunan yeni məhsullara (endo fayllar, manual fayllar, obturasiya və irrigasiya materialları və s. ) rəhbərlik edir. İlbəil geniş çeşidli məhsul seriyasını genişləndirən Fanta Dental diş həkimlərinə asan və rahat təcrübə gətirir.
+                </p>
+              </div>
+            </section>
+          </article>
+
+          <article class="page" id="DFS">
+            <section class="page__main">
+              <a target="_blank" href="https://www.dfs-diamon.de/en">
+                <img src="./images/DFSDiamon.png" alt="">
+              </a>
+              <div class="page__pretitle">
+                <a class="page__pretitle-link" href="https://www.dfs-diamon.de/en" target="_blank">Sayta keç</a>
+              </div>
+              <div class="readmore js-read-more" data-rm-words="10">
+                <p>
+                  DFS Diamon: 30 ildən artıqdır ki, stomatologiya sənayesində məhsulun inkişafı və istehsalına diqqət yetirir. Bu müddət ərzində DFS Diamon stomatologiya sənayesində, eləcə də digər texniki sahələrdə 500-dən çox yeni məhsul, patent və dizayn işləyib hazırlamışdır.
+                </p>
+              </div>
+            </section>
+          </article>
+
+          <article class="page" id="Harz">
+            <section class="page__main">
+              <a target="_blank" href="https://harzlabs.ru/products/polyamide-nylon-for-sls/">
+                <img src="./images/Harzlabs.jpg" alt="">
+              </a>
+              <div class="page__pretitle">
+                <a class="page__pretitle-link" href="https://harzlabs.ru/products/polyamide-nylon-for-sls/" target="_blank">Sayta keç</a>
+              </div>
+              <div class="readmore js-read-more" data-rm-words="10">
+                <p>
+                  HARZ Labs polimer kimyası sahəsində 5 illik tədqiqatlardan sonra 2017-ci ildə Moskvada yaradılıb. 2018-ci ildə şirkət Avropada (Latviya) ilk nümayəndəliyini və anbarını açmışdır. HARZ Labs DLP/LCD, SLA və digər 3D çap texnologiyaları üçün geniş çeşiddə məhsullar təklif edir.
+                </p>
+              </div>
+            </section>
+          </article>
+
+          <article class="page" id="Phrozen">
+            <section class="page__main">
+              <a target="_blank" href="https://phrozen3d.com/">
+                <img src="./images/Phrozen.png" alt="">
+              </a>
+              <div class="page__pretitle">
+                <a class="page__pretitle-link" href="https://phrozen3d.com/" target="_blank">Sayta keç</a>
+              </div>
+              <div class="readmore js-read-more" data-rm-words="10">
+                <p>
+                  Phrozen 2016-cı ildə bir qrup Tayvanlı 3D çap həvəskarları tərəfindən təsis edilib. ABŞ, Avropa, Yaponiya və Cənubi Koreya kimi ölkələrə çıxışı olan şirkət sənaye tətbiqi, tibbi və şəxsi istifadə üçün peşəkar istehlakçıya uyğun 3D printerlər istehsal edir.
+                </p>
+              </div>
+            </section>
+          </article>
+
+          <article class="page" id="Zetintech">
+            <section class="page__main">
+              <a target="_blank" href="https://www.zetintech.com/Sintering-Furnace.html">
+                <img src="./images/zetin.jpg" alt="">
+              </a>
+              <div class="page__pretitle">
+                <a class="page__pretitle-link" href="https://www.zetintech.com/Sintering-Furnace.html" target="_blank">Sayta keç</a>
+              </div>
+              <div class="readmore js-read-more" data-rm-words="10">
+                <p>
+                  Zhengzhou Zetin Electromechanical Equipment Co., Ltd. is a professional factory dedicated to the production of dental equipment. Zetin has been deep involving in R&D and production of dental equipment for many years.
+                </p>
+              </div>
+            </section>
+          </article>
+
+          <article class="page" id="Mihmvogt">
+            <section class="page__main">
+              <a target="_blank" href="https://www.mihm-vogt.de/en/">
+                <img src="./images/MihmvogtLogo.png" alt="">
+              </a>
+              <div class="page__pretitle">
+                <a class="page__pretitle-link" href="https://www.mihm-vogt.de/en/" target="_blank">Sayta keç</a>
+              </div>
+              <div class="readmore js-read-more" data-rm-words="10">
+                <p>
+                  60 ildən artıqdır ki, stomatoloji laboratoriya cihazlarının dünya üzrə aparıcı istehsalçısı kimi, MIHM-VOGT sübut edilmiş keyfiyyət və etibarlı xidmət üzrə öz reputasiyasını qazanmışdır. Firma davamlı olaraq bir çox məhsul yeniliklərini inkişaf etdirir, təkmilləşdirir və onları stomatoloji laboratoriyaların mövcud tələblərinə uyğunlaşdırır.
+                </p>
+              </div>
+            </section>
+          </article>
+
+          <article class="page" id="Warantec">
+            <section class="page__main">
+              <a target="_blank" href="http://www.warantec.com/en/index.jsp">
+                <img src="./images/warantec.png" alt="">
+              </a>
+              <div class="page__pretitle">
+                <a class="page__pretitle-link" href="http://www.warantec.com/en/index.jsp" target="_blank">Sayta keç</a>
+              </div>
+              <div class="readmore js-read-more" data-rm-words="10">
+                <p>
+                  Since its establishment in 2001 till today, the long standing values of Warantec implants are founded upon its proprietary SLA surface and design technologies and clinically proven products.
+                </p>
+              </div>
+            </section>
+          </article>
+
+          <article class="page" id="Beta">
+            <section class="page__main">
+              <a target="_blank" href="https://betadent.com/?lang=en">
+                <img src="./images/Betadent-.png" alt="">
+              </a>
+              <div class="page__pretitle">
+                <a class="page__pretitle-link" href="https://betadent.com/?lang=en" target="_blank">Sayta keç</a>
+              </div>
+              <div class="readmore js-read-more" data-rm-words="10">
+                <p>
+                  1983-cü ildə yaradılmış Betadent şirkəti ilk olaraq bu sahəyə süni dişlərin (akrilik) istehsalı ilə başlamışdır. Fəaliyyət sahəsini genişləndirən şirkət akril polimerlərin və kopolimerlərin, diş protezləri üçün xammalın istehsalı, süni dişlərin, həmçinin ölçü materiallarının istehsalı üzrə fəaliyyətini uğurla davam etdirir.
+                </p>
+              </div>
+            </section>
+          </article>
+
+          <article class="page" id="Teknik">
+            <section class="page__main">
+              <a target="_blank" href="http://teknikdental.net/">
+                <img src="./images/TDSS.png" alt="">
+              </a>
+              <div class="page__pretitle">
+                <a class="page__pretitle-link" href="http://teknikdental.net/" target="_blank">Sayta keç</a>
+              </div>
+              <div class="readmore js-read-more" data-rm-words="10">
+                <p>
+                  Teknik Dental 2003-cü ildə keramika sobası istehsal etmək və idxal edilmiş keramika sobalarına servis xidməti vermək məqsədi ilə qurulmuş və daha sonrakı illərdə fəaliyyət göstərən bütün diş laboratoriya materialları idxalı və satışı ilə genişlənmişdir.
+                </p>
+              </div>
+            </section>
+          </article>
+
+          <article class="page" id="Mediclus">
+            <section class="page__main">
+              <a target="_blank" href="http://mediclus.co.kr/home/main.php">
+                <img src="./images/mediclus.svg" alt="">
+              </a>
+              <div class="page__pretitle">
+                <a class="page__pretitle-link" href="http://mediclus.co.kr/home/main.php" target="_blank">Sayta keç</a>
+              </div>
+              <div class="readmore js-read-more" data-rm-words="10">
+                <p>
+                  MEDICLUS was established in 2011 with new technology based on various patents as a dental material development and contribute to the medical industry with new technologies. We are exporting dental materials base on the strict quality management by ISO13485 and KGMP to more than 80 countries with approval CE and FDA etc.
+                </p>
+              </div>
+            </section>
+          </article>
+
+          <article class="page" id="Wohlwend">
+            <section class="page__main">
+              <a target="_blank" href="https://wohlwend-ag.com/en/home-en/">
+                <img src="./images/Wohlwend.gif" alt="">
+              </a>
+              <div class="page__pretitle">
+                <a class="page__pretitle-link" href="https://wohlwend-ag.com/en/home-en/" target="_blank">Sayta keç</a>
+              </div>
+              <div class="readmore js-read-more" data-rm-words="10">
+                <p>
+                  1993-cü ildə Lixtenşteyn Knyazlığında Franz Wohlwend tərəfindən yaradılmışdır. İlk dəfə Kölndə keçirilən IDS 1995 sərgisində metal keramika Vision- Classic təqdim edilmişdir. Metal keramikaların uğurlu bazara təqdim edilməsindən sonra digər keramika sistemləri bazara təqdim olundu. Şirkət estetik bərpaların istehsalı üçün innovativ və bio keramika materiallarının hazırlanması, istehsalı və satışı üzrə hərtərəfli portfel təklif edir.
+                </p>
+              </div>
+            </section>
+          </article>
+
+          <article class="page" id="Zubler">
+            <section class="page__main">
+              <a target="_blank" href="https://www.zubler.de/en">
+                <img src="./images/Zubler.png" alt="">
+              </a>
+              <div class="page__pretitle">
+                <a class="page__pretitle-link" href="https://www.zubler.de/en" target="_blank">Sayta keç</a>
+              </div>
+              <div class="readmore js-read-more" data-rm-words="10">
+                <p>
+                  Zubler 1978-ci ildən stomatoloji avadanlıq texnologiyası üzrə beynəlxalq bazarda fəallıq göstərir. Məhsula dəstək üçün köməkçi vasitələr və materiallar üçün yeni ideyalar və texnologiyalar şirkətin öz tətbiqi laboratoriyasında hazırlanır. Bu gün ümumi istehsalın 85%-ni stomatoloji texnologiya istehsalı və 15%-ni sənaye istehsalı təşkil edir. Zubler bütün dünyada stomatoloji laboratoriyalar üçün sovurma sistemləri və stomatoloji keramika üçün keramika sobaları sahəsində özünü təsdiq etmişdir.
+                </p>
+              </div>
+            </section>
+          </article>
+
+          <article class="page" id="Foshan">
+            <section class="page__main">
+              <a target="_blank" href="https://en.anle.cn/">
+                <img src="./images/ANLE.jpg" alt="">
+              </a>
+              <div class="page__pretitle">
+                <a class="page__pretitle-link" href="https://en.anle.cn/" target="_blank">Sayta keç</a>
+              </div>
+              <div class="readmore js-read-more" data-rm-words="10">
+                <p>
+                  1998-ci ildə yaradılmış Foshan Anle Medical Equipment Co., Ltd. 1998-ci ildə yaradılmışdır. Şirkət II sinif stomatoloji avadanlıqların layihələndirilməsi, istehsalı və satışı ilə məşğul olan istehsal müəssisəsidir.
+                </p>
+              </div>
+            </section>
+          </article>
+
+          <article class="page" id="Sanctuaryhealth">
+            <section class="page__main">
+              <a target="_blank" href="https://sanctuaryhealth.com.my/">
+                <img src="./images/sanctuaryhealth.png" alt="">
+              </a>
+              <div class="page__pretitle">
+                <a class="page__pretitle-link" href="https://sanctuaryhealth.com.my/" target="_blank">Sayta keç</a>
+              </div>
+              <div class="readmore js-read-more" data-rm-words="10">
+                <p>
+                  Sanctuary Health was founded in 2002 and is known as the top-notch provider of latex and elastomeric products. The company offers a comprehensive range of products with core focus on dental dams, resistance training products, and latex-based veterinary products. Currently exporting to over 150 customers across the continent, Sanctuary Health derived 80% of the total sales mainly from export. In line with the company approach in Kaizen principle, Sanctuary Health continues to improve on its product and services to serve public and taking care of the Mother Earth.
+                </p>
+              </div>
+            </section>
+          </article>
+      </section>
+  </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="section footer">
+      <div class="footer_bg_img">
+        <div class="container_footer">
+          <div class="footer-container">
+            <div class="footer-center">
+                <img src="./images/logolimondental.png" alt="">
+            </div>
+            <div class="footer-center">
+              <h3>Məlumat</h3>
+              <hr>
+              <a href="brands.htm">Brendlər</a>
+              <a href="about.html">Haqqımızda</a>
+              <a href="contact.htm">Bizimlə əlaqə</a>
+              <a href="faq.htm">Ən çox soruşulanlar FAQ</a>
+            </div>
+            <div class="footer-center">
+              <h3>Bizimlə əlaqə</h3>
+              <hr>
+              <div>
+                <span>
+                  <i class="fas fa-map-marker-alt"></i>
+                </span>
+                <a target="blank"
+                  href="https://www.google.com/maps/place/Limon+Dental/@40.3999455,49.8322647,15z/data=!4m5!3m4!1s0x0:0xe984c3eb61fc9cf2!8m2!3d40.3999455!4d49.8322647">Səməd
+                  Vurğun küç. 230 F</a>
+              </div>
+              <div>
+                <span>
+                  <i class="far fa-envelope"></i>
+                </span>
+                <a class="email" target="blank" href="https://mail.google.com/">info@limondental.com</a>
+              </div>
+              <div>
+                <span>
+                  <i class="fas fa-phone"></i>
+                </span>
+                <a href=""></a>
+                <a href="tel:+994124800678">Bizə zəng edin +99412 480 06 78</a>
+              </div>
+              <ul class="social_footer">
+                <li class="facebook"><a target="blank" href="https://www.facebook.com/limondentalltd/">
+                  <i class="fab fa-facebook"></i></a></li>
+                <li class="instagram"><a target="blank" href="https://www.instagram.com/limon_dental_technical/">
+                  <i class="fab fa-instagram"></i></a></li>
+                <li class="youtube"><a href="https://www.youtube.com/channel/UCp941euzwjx0O_LZy9GhcFA"><i class="fab fa-youtube"></i></a></li>
+                <li class="whatsapp"><a href="https://api.whatsapp.com/send?phone=+994708617342&text=Salam&source=&data=" class="whatsapp_float" target="blank">
+                  <i class="fab fa-whatsapp"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <script>
+      AOS.init();
+    </script> -->
+
+    <script>
+    
+    const ReadMore = (() => {
+      let s;
+      
+      return {
+        settings() {
+          return {
+            content: document.querySelectorAll('.js-read-more'),
+            originalContentArr: [],
+            truncatedContentArr: [],
+            moreLink: "Daha çox",
+            lessLink: "Daha az",
+          }
+        },
+
+
+        init() {
+          s = this.settings();
+          this.bindEvents();
+        },
+        
+        bindEvents() {
+          ReadMore.truncateText();
+        },
+        
+        countWords(str) {
+          return str.split(/\s+/).length;
+        },
+        
+        ellipseContent(str, wordsNum) {
+          return str.split(/\s+/).slice(0, wordsNum).join(' ') + '...';
+        },
+        truncateText() {
+          
+          for (let i = 0; i < s.content.length; i++) {
+            const originalContent = s.content[i].innerHTML;
+            const numberOfWords = s.content[i].dataset.rmWords;
+            const truncateContent = ReadMore.ellipseContent(originalContent, numberOfWords);
+            const originalContentWords = ReadMore.countWords(originalContent);
+            
+            s.originalContentArr.push(originalContent);
+            s.truncatedContentArr.push(truncateContent);
+
+            if (numberOfWords < originalContentWords) {
+              s.content[i].innerHTML = s.truncatedContentArr[i];
+              let self = i;
+              ReadMore.createLink(self)
+            }
+          }
+          ReadMore.handleClick(s.content);
+        },
+
+        createLink(index) {
+          const linkWrap = document.createElement('span');
+
+          linkWrap.className = 'read-more__link-wrap';
+
+          linkWrap.innerHTML = `<a id="read-more_${index}" class="read-more__link" style="cursor:pointer;">${s.moreLink}</a>`;
+
+          s.content[index].parentNode.insertBefore(linkWrap, s.content[index].nextSibling);
+
+        },
+        handleClick(el) {
+
+          const readMoreLink = document.querySelectorAll('.read-more__link');
+          for (let j = 0, l = readMoreLink.length; j < l; j++) {
+            readMoreLink[j].addEventListener('click', function() {
+
+            const moreLinkID = this.getAttribute('id');
+            let index = moreLinkID.split('_')[1];
+
+            el[index].classList.toggle('is-expanded');
+
+            if (this.dataset.clicked !== 'true') {
+                el[index].innerHTML = s.originalContentArr[index];
+                this.innerHTML = s.lessLink;
+                this.dataset.clicked = true;
+            } else {
+              el[index].innerHTML = s.truncatedContentArr[index];
+              this.innerHTML = s.moreLink;
+              this.dataset.clicked = false;
+            }
+          });
+        }
+      },
+
+      openAll() {
+        const instances = document.querySelectorAll('.read-more__link');
+        for (let i = 0; i < instances.length; i++) {
+          content[i].innerHTML = s.truncatedContentArr[i];
+          instances[i].innerHTML = s.moreLink;
+        }
+      }
+    }
+  })();
+  
+  ReadMore.init()
+
+$('.anime').click(function(e) {
+  e.preventDefault();
+  let target = $($(this).attr('href'));
+  if (target.length) {
+    let scrollTo = target.offset().top;
+    $('body, html').animate({scrollTop: scrollTo+'px'}, 800);
+  }
+});
+
+</script>
+</body>
+
+</html>

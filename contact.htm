@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.css" />
+
+  <link href='https://unpkg.com/boxicons@2.0.8/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+  <title>LimonDental</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+
+    <style>
+
+
+        @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+        .container_contact {
+            margin: auto;
+            width: 95%;
+        }
+
+        main {
+          font-family: "PT Sans", Arial, Helvetica, sans-serif;
+        }
+
+        section .page_title {
+            height: 300px;
+            background-image: url('./images/dental_contact2.jpg');
+            background-position: right;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        section .page_title h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 29vh;
+            font-size: 4em;
+            color: #fff;
+        }
+
+        .ttile_section {
+            text-align: center;
+            margin: 50px auto;
+        }
+
+        .ttile_section img {
+          width: 140px;
+        }
+
+        .ttile_section h2 {
+            font-size: 2.5em;
+        }
+
+        .ttile_section h2 .limon {
+          color: var(--yellow);
+        }
+
+        .ttile_section h2 .dental {
+          color: var(--primary);
+        }
+
+        .ttile_section h1 {
+            font-size: 2.8em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: rgb(172, 172, 172);
+        }
+
+        .ttile_section p {
+            color: gray;
+        }
+
+        .hr {
+            width: 95%;
+            margin: auto;
+            border: 1px solid rgb(237, 236, 236);
+        }
+
+        .location_contact {
+            display: flex;
+            justify-content: space-around;
+            margin: 50px auto;
+        }
+
+        .address {
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .address i {
+            border: 2px solid gray;
+            border-radius: 50%;
+            padding: 20px;
+            color: gray;
+            font-size: 2em;
+            margin-right: 20px;
+        }
+
+        .address_info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .address h2 {
+            font-weight: normal;
+            color: rgb(68, 68, 68);
+        }
+
+        .address  {
+            color: gray;
+            letter-spacing: 1px;
+        }
+
+        .epocht_info a {
+          color: var(--primary);
+          font-size: 1.2em;
+        }
+
+        .epocht_info a:hover {
+          color: var(--yellow);
+        }
+
+        .mobile_info span small {
+            display: flex;
+            flex-direction: column;
+            font-family: "PT Sans", Arial, Helvetica, sans-serif;
+            line-height: 30px;
+            color: gray;
+            font-size: 1em;
+        }
+
+        .address_info small {
+          font-size: 1em;
+        }
+
+        @media (max-width: 768px) {
+
+          .ttile_section {
+            text-align: center;
+          }
+
+          .ttile_section h2 {
+              font-size: 2em;
+          }
+
+          .ttile_section h1 {
+              font-size: 1.4em;
+              font-weight: bold;
+              margin-bottom: 20px;
+              color: gray;
+          }
+
+          .ttile_section p {
+              color: gray;
+          }
+
+          .container_contact {
+              margin: auto;
+              display: flex;
+              flex-direction: column;
+              padding: 40px 0;
+              text-align: center;
+          }
+
+          .location_contact {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+          }
+
+          .address, .mobile, .e-pocht {
+            display: flex;
+            flex-direction: column;
+          }
+
+          .address i, .mobile i, .e-pocht i {
+            margin-bottom: 10px;
+          }
+
+        }
+
+    </style>
+
+<body>
+
+  <div class="preloader">
+    <div class="loader_animation">
+      <img class="preloader-icon" src="./images/preloader.gif" alt="Preloader">
+      <h3 class="fontfamilyUbuntu">Loading
+        <span>.</span>
+        <span>.</span>
+        <span>.</span>
+      </h3>
+    </div>
+    <div class="social">
+      <ul>
+        <li><i class="fab fa-facebook"></i></li>
+        <li><i class="fab fa-instagram"></i></li>
+        <li><i class="fab fa-twitter"></i></li>
+        <li><i class="fab fa-whatsapp"></i></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="wp_icon">
+    <a href="https://api.whatsapp.com/send?phone=+994556307791&text=Salam&source=&data=" class="whatsapp_float"
+      target="blank"><i class="fab fa-whatsapp"></i></a>
+  </div>
+  <nav class="nav">
+    <div class="info_area">
+      <small>Poçt indeksi - AZ1078</small>
+      <small><i class="fas fa-map-marker-alt"></i> <span>Səməd Vurğun küç. 230 F</span></small>
+      <small>
+        <i class="fas fa-phone-alt"></i> <span>+99412 480 06 78</span></small>
+      <ul class="social">
+        <li class="facebook"><a target="blank" href="https://www.facebook.com/limondentalltd/">
+          <i class="fab fa-facebook"></i></a></li>
+        <li class="instagram"><a target="blank" href="https://www.instagram.com/limon_dental_technical/">
+          <i class="fab fa-instagram"></i></a></li>
+        <li class="twitter"><a href="https://www.youtube.com/channel/UCp941euzwjx0O_LZy9GhcFA"><i class="fab fa-youtube"></i></a></li>
+        <li class="whatsapp"><a href="https://api.whatsapp.com/send?phone=+994556307791&text=Salam&source=&data="
+            class="whatsapp_float" target="blank"><i class="fab fa-whatsapp"></i></a>
+      </ul>
+    </div>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo"><a href="index.html"><img src="./images/logolimondental.png" alt=""></a></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <!-- <span class="logo-name"><a href="index.html"><span class="limon_text">Limon</span> <span class="dental_text">Dental</span></a></span> -->
+      <div class="logo logo_sidebar"><a href="index.html"><img src="./images/logolimondental.png" alt=""></a></div>
+
+          <i class='bx bx-x'></i>
+        </div>
+        <ul class="links">
+          <li class="link_nav"><a href="index.html">Ana səhifə</a></li>
+          <li class="link_nav"><a href="brands.htm">Tərəfdaşlar</a></li>
+          <li class="link_nav"><a href="about.html">Haqqımızda</a></li>
+          <li class="link_nav"><a href="contact.htm">Əlaqə</a></li>
+          <div class="info_area_mobile">
+            <i class="far fa-clock"></i>
+            <small>Bazar ertəsi - Şənbə<br><span>09:00 - 19:00</span></small>
+            <i class="fas fa-map-marker-alt"></i>
+            <small><span>Səməd Vurğun küç. 230 F</span></small>
+            <i class="fas fa-phone-alt"></i>
+            <small>
+                <p>+99412 480 06 78</p>
+                <p>+99412 449 39 18</p>
+                <p>+99455 630 77 91</p>
+                <p>+99470 630 77 91</p>
+            </small>
+            <ul class="social_mobile_seidebar">
+              <li class="facebook"><a target="blank" href="https://www.facebook.com/limondentalltd/"><i
+                    class="fab fa-facebook"></i></a></li>
+              <li class="instagram"><a target="blank" href="https://www.instagram.com/limon_dental_technical/"><i
+                    class="fab fa-instagram"></i></a></li>
+              <li class="youtube"><a href=""><i class="fab fa-youtube"></i></a></li>
+              <li class="whatsapp"><a href="https://api.whatsapp.com/send?phone=+994708617342&text=Salam&source=&data="
+                  class="whatsapp_float" target="blank"><i class="fab fa-whatsapp"></i></a>
+            </ul>
+          </div>
+        </ul>
+      </div>
+        <section class="googleTranslate_searchBox">
+          <!-- <div id="google_translate_element"></div> -->
+      </section>
+    </div>
+  </nav>
+  <main>
+        <section>
+            <div class="page_title">
+            </div>
+        </section>
+        <div class="container_contact">
+            <div class="ttile_section">
+                <img src="./images/logolimondental.png" alt="">
+                <h1>stomatoloji avadanlıqların satışı</h1>
+                <p>Mağazamız şəhərin istənilən yerindən gəlmək üçün çox əlverişli yerdədir.</p>
+            </div>
+            <hr class="hr">
+            <div class="location_contact">
+                <div class="address">
+                    <div class="icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <div class="address_info">
+                        <h2>Ünvan</h2><br>
+                        <small>Vurğun küç. 230 F</small>
+                    </div>
+                </div>
+                <div class="mobile">
+                    <div class="address">
+                        <div class="icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="mobile_info">
+                            <span>
+                                <h2>Telefon</h2><br>
+                                <small>+99412 480 06 78</small>
+                                <small>+99412 449 39 18</small>
+                                <small>+99455 630 77 91</small>
+                                <small>+99470 630 77 91</small>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="e_pocht">
+                    <div class="address">
+                        <div class="icon">
+                            <i class="far fa-envelope"></i>
+                        </div>
+                        <div class="epocht_info">
+                            <h2>E-poçt</h2><br>
+                            <a href="https://mail.google.com/" target="blank"><small>info@limondental.com</small></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12153.607803011917!2d49.8322647!3d40.3999455!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe984c3eb61fc9cf2!2sLimon%20Dental!5e0!3m2!1str!2s!4v1636051890213!5m2!1str!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="section footer">
+    <div class="footer_bg_img">
+      <div class="container_footer">
+        <div class="footer-container">
+          <div class="footer-center">
+              <img src="./images/logolimondental.png" alt="">
+          </div>
+          <div class="footer-center">
+            <h3>Məlumat</h3>
+            <hr>
+            <a href="brands.htm">Brendlər</a>
+            <a href="about.html">Haqqımızda</a>
+            <a href="contact.htm">Bizimlə əlaqə</a>
+            <a href="faq.htm">Ən çox soruşulanlar FAQ</a>
+          </div>
+          <div class="footer-center">
+            <h3>Bizimlə əlaqə</h3>
+            <hr>
+            <div>
+              <span>
+                <i class="fas fa-map-marker-alt"></i>
+              </span>
+              <a target="blank"
+                href="https://www.google.com/maps/place/Limon+Dental/@40.3999455,49.8322647,15z/data=!4m5!3m4!1s0x0:0xe984c3eb61fc9cf2!8m2!3d40.3999455!4d49.8322647">Səməd
+                Vurğun küç. 230 F</a>
+            </div>
+            <div>
+              <span>
+                <i class="far fa-envelope"></i>
+              </span>
+              <a class="email" target="blank" href="https://mail.google.com/">info@limondental.com</a>
+            </div>
+            <div>
+              <span>
+                <i class="fas fa-phone"></i>
+              </span>
+              <a href=""></a>
+              <a href="tel:+994124800678">Bizə zəng edin +99412 480 06 78</a>
+            </div>
+            <ul class="social_footer">
+              <li class="facebook"><a target="blank" href="https://www.facebook.com/limondentalltd/">
+                <i class="fab fa-facebook"></i></a></li>
+              <li class="instagram"><a target="blank" href="https://www.instagram.com/limon_dental_technical/">
+                <i class="fab fa-instagram"></i></a></li>
+              <li class="youtube"><a href="https://www.youtube.com/channel/UCp941euzwjx0O_LZy9GhcFA"><i class="fab fa-youtube"></i></a></li>
+              <li class="whatsapp"><a href="https://api.whatsapp.com/send?phone=+994708617342&text=Salam&source=&data=" class="whatsapp_float" target="blank">
+                <i class="fab fa-whatsapp"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.js"></script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/slider.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
+

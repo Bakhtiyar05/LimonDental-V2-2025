@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.css" />
+
+  <link href='https://unpkg.com/boxicons@2.0.8/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+  <title>LimonDental</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+        main {
+          background-image: url('./images/dentis_walpaper3.jpg');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          min-height: 100vh;
+          color: rgb(221, 221, 221);
+          font-family: var(--Font1);
+        }
+
+        .about_section {
+          width: 95%;
+          margin: auto;
+          z-index: 999;
+          opacity: 1;
+          padding: 250px 0 100px 0;
+        }
+
+        .about_section .title h2 {
+          font: bold 2em 'Raleway';
+          color: rgb(141, 141, 141);
+        }
+
+        .about_section .title h1 {
+          font: bold 2.5em 'Raleway';
+          margin: 10px 0 0 0;
+        }
+
+        .about_section hr {
+          margin: 50px auto;
+          border: 1px solid gray;
+        }
+
+        .texts {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .texts p {
+          font: 200 1em var(--Font1);
+          text-align: justify;
+        }
+
+        .text_1 p {
+          text-indent: 50px;
+        }
+
+        .texts .text_1 h1,
+        .texts .text_2 h1,
+        .vision_box h1
+        {
+          font-size: 2em;
+        }
+
+        .texts .text_1,
+        .texts .text_2
+        {
+          width: 45%;
+          line-height: 25px;
+          letter-spacing: 1px;
+        }
+
+
+      .swiper {
+        width: 800px;
+        height: 100%;
+      }
+
+      .row {
+        max-width: 90%;
+        display: flex;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .card {
+        padding: 0 0 20px 0;
+        max-width: 300px;
+      }
+      
+      .card:hover {
+        box-shadow: 0 0 5px gray;
+        transition: .4s;
+      }
+
+      .card img {
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        width: 100% !important;
+        background-position: bottom;
+        max-height: 290px;
+        object-fit: cover;
+      }
+
+      .column {
+        margin-bottom: 16px;
+        padding: 0 8px;
+      }
+
+      @media screen and (max-width: 650px) {
+        .column {
+          width: 100%;
+          display: block;
+        }
+      }
+
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.981);
+        border-radius: 30px;
+      }
+
+      .container_testimonial {
+        padding: 0 16px;
+      }
+
+      .container_testimonial p a {
+        color: var(--yellow);
+        font-size: 1.1em;
+      }
+
+      .container_testimonial p a:hover {
+        color: var(--primary);
+      }
+
+      .container_testimonial::after, .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .title {
+        color: rgb(215, 215, 215);
+        margin: 15px auto;
+      }
+
+      .button {
+        border: none;
+        outline: 0;
+        padding: 5px;
+        margin: 10px auto;
+        color: white;
+        background-color: var(--primary);
+        border: 2px solid var(--primary);
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+        border-radius: 30px;
+      }
+
+      .button a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .button a i {
+        margin-right: 20px;
+        font-size: 1.7em;
+      }
+
+      .button:hover {
+        border: 2px solid var(--yellow);
+        background-color: var(--yellow);
+      }
+
+
+      .vision_box {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .vision_box article {
+        width: 45%;
+      }
+
+      .vision_box article h4 {
+        margin-top: 30px;
+        font: bold 1.2em var(--Font1);
+        letter-spacing: 1px;
+      }
+
+      .vision_box article h4 span {
+        margin-right: 7px;
+      }
+
+      .vision_box ul {
+        margin: 20px 0 0 45px;
+      }
+
+      .vision_box li {
+        list-style-type: square;
+        font-family: var(--Font1);
+        color: #fff;
+        line-height: 25px;
+        letter-spacing: 0.5px;
+      }
+
+      @media (max-width: 1200px) {
+
+        .row {
+          max-width: 90%;
+          display: flex;
+          margin: auto;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+
+        .swiper {
+          width: 100%;
+        }
+      }
+
+      @media ( max-width: 868px ) {
+
+        .vision_box {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+        }
+
+        .vision_box article {
+          width: 100%;
+        }
+
+      }
+
+      @media (max-width: 567px) {
+
+        .about_section {
+          padding: 100px 0 100px 0;
+        }
+
+        .title h2 {
+          font-size: 1.5em !important;
+        }
+
+        .title h1 {
+          font-size: 1.9em !important;
+        }
+
+        .texts {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .texts .text_1,
+        .texts .text_2
+        {
+            width: 95%;
+            line-height: 25px;
+            letter-spacing: 1px;
+        }
+
+        .text_2 {
+          width: 100%;
+        }
+
+        .text_2 h1 {
+          margin-top: 30px;
+          font-size: 1.5em !important;
+        }
+
+        .swiper {
+          max-width: 33rem;
+        }
+      }
+
+      @media (max-width: 768px) {
+
+        .text_1 p, .text_2 p {
+          font-size: .9em;
+          line-height: 15px;
+          text-align: justify;
+        }
+      }
+
+
+    </style>
+
+
+<body>
+
+  <div class="preloader">
+    <div class="loader_animation">
+      <img class="preloader-icon" src="./images/preloader.gif" alt="Preloader">
+      <h3 class="fontfamilyUbuntu">Loading
+        <span>.</span>
+        <span>.</span>
+        <span>.</span>
+      </h3>
+    </div>
+    <div class="social">
+      <ul>
+        <li><i class="fab fa-facebook"></i></li>
+        <li><i class="fab fa-instagram"></i></li>
+        <li><i class="fab fa-twitter"></i></li>
+        <li><i class="fab fa-whatsapp"></i></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="wp_icon">
+    <a href="https://api.whatsapp.com/send?phone=+994556307791&text=Salam&source=&data=" class="whatsapp_float"
+      target="blank"><i class="fab fa-whatsapp"></i></a>
+  </div>
+  <nav class="nav">
+    <div class="info_area">
+      <small>Poçt indeksi - AZ1078</small>
+      <small><i class="fas fa-map-marker-alt"></i> <span>Səməd Vurğun küç. 230 F</span></small>
+      <small>
+        <i class="fas fa-phone-alt"></i> <span>+99412 480 06 78</span></small>
+      <ul class="social">
+        <li class="facebook"><a target="blank" href="https://www.facebook.com/limondentalltd/">
+          <i class="fab fa-facebook"></i></a></li>
+        <li class="instagram"><a target="blank" href="https://www.instagram.com/limon_dental_technical/">
+          <i class="fab fa-instagram"></i></a></li>
+        <li class="twitter"><a href="https://www.youtube.com/channel/UCp941euzwjx0O_LZy9GhcFA"><i class="fab fa-youtube"></i></a></li>
+        <li class="whatsapp"><a href="https://api.whatsapp.com/send?phone=+994556307791&text=Salam&source=&data="
+            class="whatsapp_float" target="blank"><i class="fab fa-whatsapp"></i></a>
+      </ul>
+    </div>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo"><a href="index.html"><img src="./images/logolimondental.png" alt=""></a></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <!-- <span class="logo-name"><a href="index.html"><span class="limon_text">Limon</span> <span class="dental_text">Dental</span></a></span> -->
+      <div class="logo logo_sidebar"><a href="index.html"><img src="./images/logolimondental.png" alt=""></a></div>
+
+          <i class='bx bx-x'></i>
+        </div>
+        <ul class="links">
+          <li class="link_nav"><a href="index.html">Ana səhifə</a></li>
+          <li class="link_nav"><a href="brands.htm">Tərəfdaşlar</a></li>
+          <li class="link_nav"><a href="about.html">Haqqımızda</a></li>
+          <li class="link_nav"><a href="contact.htm">Əlaqə</a></li>
+          <div class="info_area_mobile">
+            <i class="far fa-clock"></i>
+            <small>Bazar ertəsi - Şənbə<br><span>09:00 - 19:00</span></small>
+            <i class="fas fa-map-marker-alt"></i>
+            <small><span>Səməd Vurğun küç. 230 F</span></small>
+            <i class="fas fa-phone-alt"></i>
+            <small>
+                <p>+99412 480 06 78</p>
+                <p>+99412 449 39 18</p>
+                <p>+99455 630 77 91</p>
+                <p>+99470 630 77 91</p>
+            </small>
+            <ul class="social_mobile_seidebar">
+              <li class="facebook"><a target="blank" href="https://www.facebook.com/limondentalltd/"><i
+                    class="fab fa-facebook"></i></a></li>
+              <li class="instagram"><a target="blank" href="https://www.instagram.com/limon_dental_technical/"><i
+                    class="fab fa-instagram"></i></a></li>
+              <li class="youtube"><a href=""><i class="fab fa-youtube"></i></a></li>
+              <li class="whatsapp"><a href="https://api.whatsapp.com/send?phone=+994708617342&text=Salam&source=&data="
+                  class="whatsapp_float" target="blank"><i class="fab fa-whatsapp"></i></a>
+            </ul>
+          </div>
+        </ul>
+      </div>
+        <section class="googleTranslate_searchBox">
+          <!-- <div id="google_translate_element"></div> -->
+      </section>
+    </div>
+  </nav>
+    <main>
+
+        <section class="about_section">
+            <div class="title">
+                <h2>Limon Dental</h2>
+                <h1>Sizin üçün məhsulları daha əl çatan etdi.</h1>
+            </div>
+            <hr>
+            <div class="texts">
+                <div class="text_1">
+                    <h1>Limon Dental</h1>
+                    <br>
+                    <p>
+                      Biz hər gün yüzlərlə insanın sağlam təbəssüm əldə etməsi üçün innovativ yollar təqdim edirik.
+                      Şirkətimizin fəaliyyəti xalqımızın mənəvi dəyərləri üzərində qurulub. İnkişafımız boyu bu dəyərlərə bağlı qaldığımıza şahid ola bilərsiniz. 
+                      Müştəri məmnuniyyətini təmin etmək üçün peşəkar heyətimiz mütəmadi olaraq fərdi və kollektiv inkişafla bağlı səylərini davam etdirir.
+                      Şirkət olaraq 2006-cı  ildən  fasiləsiz fəaliyyət göstəririk. Bir çox dünya brendlərinin ölkəmizdə eksklüziv təmsilçiliyini həyata keçiririk.  Bu illər ərzində ölkəmizdə və ölkəmizdən kənarda stomatologiyanın inkişafı ilə bağlı bir çox tədbirlər, seminarlar, ixtisasartırma kursları təşkil etmişik.
+                    </p>
+                </div>
+                <div class="text_2">
+                    <h1>Hədəflərimiz (goal)</h1>
+                    <br>
+                    <p>
+                      Pasiyentlərin ağız sağlamlığı və estetikasının təmin edilməsində stomatoloq və texniklərimizi ən son innovativ texnologiya və materiallarla təhciz etmək.
+                    </p>
+                    <br>
+                    <h1>Baxışımız (vision)</h1>
+                    <br>
+                    <p>
+                      Müştəri məmnuniyyətini prioritet bilərək hər zaman öz sahəsində lider olmaq.
+                    </p>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <h1 class=""> Prinsiplərimiz (values)</h1>
+            <div class="vision_box">
+              <article>
+                <div>
+                  <h4><span>&#10003;</span>	Keyfiyyət (Quality)</h4>
+                  <div class="vision_ul">
+                    <ul>
+                      <li>“Limon Dental” olaraq tərəf müqabillərimizin gözləntilərini tam təmin etmək;</li>
+                      <li>Xidmət səviyyəmizin yüksəldilməsi üçün davamlı yatırım etmək;</li>
+                      <li>Alıcılarımız üçün təhlükəsiz və komfortlu iş şəraiti yaratmaq;</li>
+                      <li>Effektiv idarəetmə sisteminə sahib olmaq.</li>
+                    </ul>
+                  </div>
+                </div>
+
+                  <div>
+                    <h4><span>&#10003;</span>	Sürət</h4>
+                    <div class="vision_ul">
+                      <ul>
+                        <li>Müştərilərimizi razılaşdırılmış vaxt çərçivəsində keyfiyyətli məhsullarla təhciz etmək;</li>
+                        <li>Servis xidmətinin maksimal sürətini təmin etmək.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div>
+                  <h4><span>&#10003;</span> Cavabdehlik</h4>
+                  <div class="vision_ul">
+                    <ul>
+                      <li>Satış və servisdən sonra davamlı olaraq alıcılarımızı operativ texniki və informativ dəstəklə təmin vermək.</li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+
+                <article>
+                <div>
+                <h4><span>&#10003;</span> Hörmət</h4>
+                <div class="vision_ul">
+                  <ul>
+                    <li>Alıcılarımızın bütün istəklərinə həssaslıqla yanaşaraq əməkdaşlığımızın bizim üçün nə qədər önəmli olduğunu daim əməli olaraq hiss etdirmək.</li>
+                  </ul>
+                </div>
+              </div>
+
+                <div>
+                <h4><span>&#10003;</span> Etibarlılıq</h4>
+                <div class="vision_ul">
+                  <ul>
+                    <li>“Limon Dental” olaraq tərəf müqabillərimizin etibarını qazanmaq ən əsas hədəflərimizdən biridir.</li>
+                  </ul>
+                </div>
+              </article>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="column">
+                <div class="card">
+                  <img src="./images/Adilll.jpg" alt="Jane" style="width:100%">
+                  <div class="container_testimonial">
+                    <br>
+                    <h2>Adil Məmmədov</h2>
+                    <p class="title">Direktor & şirkətin təsisçisi</p>
+                    <p><a href="mailto:info@limondental.com">info@limondental.com</a></p>
+                    <!-- <button class="button"><a href="https://api.whatsapp.com/send?phone=+994708617342&text=Salam&source=&data=" class="whatsapp_float" target="blank"><i class="fab fa-whatsapp"></i> Əlaqə</a></button> -->
+                  </div>
+                </div>
+              </div>
+            
+              <div class="column">
+                <div class="card">
+                  <img src="./images/Turall.jpg" alt="Mike" style="width:100%">
+                  <div class="container_testimonial">
+                    <br>
+                    <h2>Tural Mehdiyev</h2>
+                    <p class="title">Maliyyə direktoru</p>
+                    <p><a href="mailto:tural@limondental.com">tural@limondental.com</a></p>
+                    <!-- <button class="button"><a href="https://api.whatsapp.com/send?phone=+994708617342&text=Salam&source=&data=" class="whatsapp_float" target="blank"><i class="fab fa-whatsapp"></i> Əlaqə</a></button> -->
+                  </div>
+                </div>
+              </div>
+              
+              <div class="column">
+                <div class="card">
+                  <img src="./images/Qudret.jpg" alt="John" style="width:100%">
+                  <div class="container_testimonial">
+                    <br>
+                    <h2>Qüdrət İsmayılov</h2>
+                    <p class="title">Satış üzrə direktor</p>
+                    <p><a href="mailto:qudrat.ismayilov@limondental.com">qudrat.ismayilov@limondental.com</a></p>
+                    <!-- <button class="button"><a href="https://api.whatsapp.com/send?phone=+994708617342&text=Salam&source=&data=" class="whatsapp_float" target="blank"><i class="fab fa-whatsapp"></i> Əlaqə</a></button> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+    </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="section footer">
+    <div class="footer_bg_img">
+      <div class="container_footer">
+        <div class="footer-container">
+          <div class="footer-center">
+              <img src="./images/logolimondental.png" alt="">
+          </div>
+          <div class="footer-center">
+            <h3>Məlumat</h3>
+            <hr>
+            <a href="brands.htm">Brendlər</a>
+            <a href="about.html">Haqqımızda</a>
+            <a href="contact.htm">Bizimlə əlaqə</a>
+            <a href="faq.htm">Ən çox soruşulanlar FAQ</a>
+          </div>
+          <div class="footer-center">
+            <h3>Bizimlə əlaqə</h3>
+            <hr>
+            <div>
+              <span>
+                <i class="fas fa-map-marker-alt"></i>
+              </span>
+              <a target="blank"
+                href="https://www.google.com/maps/place/Limon+Dental/@40.3999455,49.8322647,15z/data=!4m5!3m4!1s0x0:0xe984c3eb61fc9cf2!8m2!3d40.3999455!4d49.8322647">Səməd
+                Vurğun küç. 230 F</a>
+            </div>
+            <div>
+              <span>
+                <i class="far fa-envelope"></i>
+              </span>
+              <a class="email" target="blank" href="https://mail.google.com/">info@limondental.com</a>
+            </div>
+            <div>
+              <span>
+                <i class="fas fa-phone"></i>
+              </span>
+              <a href=""></a>
+              <a href="tel:+994124800678">Bizə zəng edin +99412 480 06 78</a>
+            </div>
+            <ul class="social_footer">
+              <li class="facebook"><a target="blank" href="https://www.facebook.com/limondentalltd/">
+                <i class="fab fa-facebook"></i></a></li>
+              <li class="instagram"><a target="blank" href="https://www.instagram.com/limon_dental_technical/">
+                <i class="fab fa-instagram"></i></a></li>
+              <li class="youtube"><a href="https://www.youtube.com/channel/UCp941euzwjx0O_LZy9GhcFA"><i class="fab fa-youtube"></i></a></li>
+              <li class="whatsapp"><a href="https://api.whatsapp.com/send?phone=+994708617342&text=Salam&source=&data=" class="whatsapp_float" target="blank">
+                <i class="fab fa-whatsapp"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.js"></script>
+  <script src="./js/slider.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- <script>
+    AOS.init();
+  </script> -->
+</body>
+
+</html>
+
