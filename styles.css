@@ -146,17 +146,21 @@ body {
 /* ________ */
 
 .info_area {
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
 	top: 0;
 	left: 0;
 	width: 100%;
-	padding: 10px 0;
+	padding: 15px 0;
 	background-color: var(--primary);
 	font-family: var(--Font1);
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 	z-index: 99;
+}
+
+.info_area > div {
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .info_area small {
@@ -232,13 +236,16 @@ nav {
 
 nav .navbar {
 	min-height: 30px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
 	margin: auto;
 	padding: 10px 20px 0 20px;
 	background-color: rgb(255, 255, 255);
 	border-bottom: 1px solid var(--gray4);
+}
+
+nav .navbar > div {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .logo img {
@@ -780,18 +787,18 @@ nav .navbar .links li .arrow {
 
 .owl-carousel {
 	margin-top: 140px;
-    max-height: 700px;
+    max-height: 900px;
 }
 
 .owl-carousel .item img {
     width: 100%;
     /* height: auto; */
-    height: 700px;
+    height: 900px;
     object-fit: cover;
 }
 
 .owl-carousel .item  {
-    max-height: 700px;
+    max-height: 900px;
 }
 
 .owl-theme .owl-nav.disabled + .owl-dots {
@@ -866,16 +873,16 @@ nav .navbar .links li .arrow {
 
 	.owl-carousel {
 		margin-top: 140px;
-		min-height: 1300px !important;
+		min-height: 1800px !important;
 	}
 	
 	.owl-carousel .item img {
-		min-height: 1300px !important;
+		min-height: 1800px !important;
 		object-fit: cover;
 	}
 	
 	.owl-carousel .item  {
-		min-height: 1300px !important;
+		min-height: 1800px !important;
 	}
 
 	img.image_1.aos-init.aos-animate {
@@ -1142,6 +1149,7 @@ nav .navbar .links li .arrow {
 
 .testimonials {
 	background-color: #fff;
+	padding: 50px 0;
 }
 
 .brands .swiper-container {
@@ -1228,7 +1236,7 @@ nav .navbar .links li .arrow {
 
 .footer-container {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	flex-wrap: wrap;
 	gap: 30px;
 }
@@ -1391,7 +1399,7 @@ nav .navbar .links li .arrow {
     background-color: #fecc2a97;
     width: 100%;
 	min-height: 500px;
-	padding: 0 10px;
+	padding: 50px 10px;
 }
 
 .about_us_text_imgs_container {
@@ -1468,12 +1476,12 @@ nav .navbar .links li .arrow {
 .btn_our_teem a {
     display: flex;
     justify-content: space-between;
-    background-color: var(--grey1);
+    background-color: var(--primary);
     padding: 15px 30px;
     width: 350px;
-    color: #fff;
+    color: #000;
     text-transform: uppercase;
-    font: 200 1em var(--Font1);
+    font: 600 1em var(--Font1);
     letter-spacing: 1.5px;
     transition: .5s;
 }
@@ -1485,12 +1493,11 @@ nav .navbar .links li .arrow {
 .btn_our_teem a span {
     margin-left: 30px;
     transition: .3s;
-    color: var(--yellow);
+    color: #000;
 }
 
 .btn_our_teem a:hover {
     transition: .3s;
-    color: var(--yellow);
 }
 
 @media ( max-width: 1138px ) {
